@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2AA9741C9A786A00D83E78 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AA9731C9A786A00D83E78 /* User.m */; };
 		C9717AAB1C913DF000485C66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9717AAA1C913DF000485C66 /* main.m */; };
 		C9717AB41C913E3100485C66 /* JAppDIProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C9717AB31C913E3100485C66 /* JAppDIProtocol.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2E2AA9701C9A780900D83E78 /* info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = info.h; sourceTree = "<group>"; };
+		2E2AA9711C9A781B00D83E78 /* info1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = info1.h; sourceTree = "<group>"; };
+		2E2AA9721C9A786A00D83E78 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		2E2AA9731C9A786A00D83E78 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C9717AA71C913DF000485C66 /* DI-Protocol */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "DI-Protocol"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9717AAA1C913DF000485C66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9717AB21C913E3100485C66 /* JAppDIProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAppDIProtocol.h; path = "DI-Protocol/JAppDIProtocol.h"; sourceTree = "<group>"; };
@@ -41,6 +46,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E2AA96F1C9A77D700D83E78 /* TestModel */ = {
+			isa = PBXGroup;
+			children = (
+				2E2AA9701C9A780900D83E78 /* info.h */,
+				2E2AA9711C9A781B00D83E78 /* info1.h */,
+				2E2AA9721C9A786A00D83E78 /* User.h */,
+				2E2AA9731C9A786A00D83E78 /* User.m */,
+			);
+			name = TestModel;
+			sourceTree = "<group>";
+		};
 		C9717A9E1C913DF000485C66 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +77,7 @@
 		C9717AA91C913DF000485C66 /* DI-Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				2E2AA96F1C9A77D700D83E78 /* TestModel */,
 				C9717AAA1C913DF000485C66 /* main.m */,
 			);
 			path = "DI-Protocol";
@@ -133,6 +150,7 @@
 			files = (
 				C9717AAB1C913DF000485C66 /* main.m in Sources */,
 				C9717AB41C913E3100485C66 /* JAppDIProtocol.m in Sources */,
+				2E2AA9741C9A786A00D83E78 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +269,7 @@
 				C9717AB01C913DF000485C66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

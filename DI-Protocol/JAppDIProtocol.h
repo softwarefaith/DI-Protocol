@@ -8,14 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
-@interface JAppDIProtocol : NSProxy
 
-@property(nonatomic, strong, readonly) NSHashTable* delegates;
-
-+ (instancetype)sharedInstance;
+@protocol JAppDIProtocol <NSObject>
 
 - (void)injectDependencyObject:(id)object forProtocol:(Protocol *)protocol;
 
-
-
 @end
+
+
+
+/*
+    生成单例
+ */
+extern id JAppDISingletonProxyCreate();
+
+/*
+   普通对象
+ */
+extern id JAppDIProxyCreate();
+
+
